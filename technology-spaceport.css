@@ -1,0 +1,12 @@
+.technology-img {
+    background-image: url(./images/technology/image-spaceport-landscape.jpg);
+}
+
+
+/* MEDIA QUERY FOR LAPTOPS AND BIGSCREENS */
+
+@media screen and (min-width:63em) {
+    .technology-img {
+        background-image: url(./images/technology/image-spaceport-portrait.jpg);
+    }
+}

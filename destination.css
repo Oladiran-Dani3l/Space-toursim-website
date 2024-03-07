@@ -1,0 +1,190 @@
+body {
+    background-image: url(./images/destination/background-destination-desktop.jpg);
+}
+
+.destination {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 1rem 8rem;
+}
+
+.destination span {
+    color: var(--color-effects);
+    font-weight: bold;
+}
+
+.planet h5 {
+    color: var(--color-white);
+}
+
+.planet-img {
+    width: 27.8125rem;
+    height: 27.8125rem;
+    background-image: url(./images/destination/image-moon.png);
+    background-position: left center;
+    background-size: 82%;
+    background-repeat: no-repeat;
+}
+
+.planet-facts {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 11rem;
+    margin-left: 6rem;
+}
+
+.planet-locations .location {
+    position: relative;
+    font-size: var(--nav-text);
+    color: var(--pry-wht);
+    letter-spacing: 2.7px;
+}
+
+.planet-locations .location::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background: var(--color-gray);
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.planet-locations .location:hover::before {
+    opacity: 1;
+}
+
+.planet-locations .active.location::before {
+    opacity: 1;
+    background: var(--color-white);
+}
+
+.planet-locations a:not(:last-child) {
+    margin-right: 2.25rem;
+}
+
+.planet-title {
+    margin-top: 2rem;
+}
+
+.planet-writeup {
+    font-size: var(--body-text);
+    line-height: 1.8
+}
+
+.line {
+    margin-top: 3rem;
+    background-color: var(--color-effects);
+    height: 1px;
+    width: 25rem;
+}
+
+.extra-facts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-title {
+    margin-top: 1rem;
+    font-size: var(--font-sub-h2);
+    letter-spacing: 2.36px;
+    color: var(--color-light);
+}
+
+.facts-answer {
+    color: var(--color-white);
+    letter-spacing: 0;
+}
+
+
+/* =========================== MEDIA QUERIES ================================ */
+
+/* =========================== MOBILE ================================ */
+
+@media screen and (max-width: 32em) {
+
+    body {
+        background-image: url(./images/destination/background-destination-mobile.jpg);
+        overflow-y: visible;
+    }
+
+    .destination {
+        padding: 0.725rem 0 4rem 2.3125rem;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .planet-img {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        width: 10.625rem;
+        height: 10.625rem;
+        background-size: 100%;
+        
+    }
+
+    .extra-facts {
+        flex-direction: column;
+    }
+
+    .facts-title {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .facts-answer {
+        font-size: var(--font-h5);
+    }
+}
+
+
+/* =========================== TABLET ================================ */
+
+@media screen and (min-width: 32em) and (max-width:63em) {
+    body {
+        background-image: url(./images/destination/background-destination-tablet.jpg);
+        overflow-y: visible;
+    }
+
+    .destination {
+        padding: 2rem 2.5rem 1rem 1rem;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .planet {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .planet h5 {
+        position: absolute;
+        left: -65%;
+    }
+
+    .planet-img {
+        margin-top: 3rem;
+        width: 18.75rem;
+        height: 18.75rem;
+        background-position: 33% center;
+    }
+
+    .planet-title {
+        font-size: 5rem;
+    }
+
+    .planet-writeup {
+        font-size: var(--nav-text);
+        letter-spacing: 2.7px;
+        width: 34.5rem;
+    }
+}

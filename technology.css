@@ -1,0 +1,239 @@
+body {
+    background-image: url(./images/technology/background-technology-desktop.jpg);
+}
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem 0 0 8.2rem;
+}
+
+.technology-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1.6fr 1.2fr;
+    gap: 4rem;  
+}
+
+.technology-container>div:not(:last-child) {
+    margin-top: 4rem;
+}
+
+.technology h5{
+    color: var(--color-white);
+}
+
+.technology span {
+    color: var(--color-effects);
+    font-weight: bold;
+}
+
+.num-btns {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+}
+
+.num-btn {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px var(--color-gray) solid;
+}
+
+.num-btn a {
+    position: absolute;
+    right: 40%;
+    top: 22%;
+}
+
+.num-btn:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.num-btn:hover {
+    border-color: var(--color-white);
+}
+
+.active.num-btn {
+    border-color: var(--color-white);
+    background-color: var(--color-white);
+}
+
+.num-btn .active> h4{
+    color: var(--color-dark);
+}
+
+.technology-terminology {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tech-title {
+    letter-spacing: 2.7px;
+}
+
+.tech-info {
+    width: 23rem;
+    line-height: 2rem;
+}
+
+.technology-img {
+    background-image: url(./images/technology/image-launch-vehicle-landscape.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 28.5rem;
+    width: 28rem;
+}
+
+
+
+
+
+/* ============= MEDIA QUERIES ================ */
+
+
+/* ============= PHONE DEVICES ================ */
+@media screen and (max-width: 32em) {
+    body {
+        background-image: url(./images/technology/background-technology-mobile.jpg);
+    }
+
+    .technology {
+        padding: 0;
+    }
+
+    .technology-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+    .technology-container>div:not(:last-child) {
+        margin-top: 0 ;
+    }
+
+
+    .technology h5 {
+        padding-left: 6rem;
+    }
+
+    .technology-img {
+        order: 1;
+        width: 100%;
+        height: 10.625rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 3.75rem;
+    }
+
+    .num-btns {
+        order: 2;
+        flex-direction: row;
+        width: inherit;
+        height: 2.5rem;
+        align-items: start;
+    }
+
+    .num-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .num-btn:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .technology-terminology {
+        order: 3;
+        padding-top: 0;
+    }
+
+    .tech-info {
+        width: 21rem;
+    }
+}
+
+
+
+/* =========================== TABLET ================================ */
+
+@media screen and (min-width: 32em) and (max-width:63em) {
+    body {
+        background-image: url(./images/technology/background-technology-tablet.jpg)
+    }
+
+    .technology {
+        padding: 0;
+    }
+
+    .technology-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* padding: 2rem 3rem ;
+        padding-bottom: 0; */
+    }
+
+    .technology-container>div:not(:last-child) {
+        margin-top: 0 ;
+    }
+
+    .technology h5 {
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    .technology-img {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        order: 1;
+        margin-top: 3.75rem;
+        height: 25rem;
+    }
+
+    .num-btns {
+        flex-direction: row;
+        order: 2;
+        width: inherit;
+        align-items: start;
+        height: 4rem;
+    }
+
+    .num-btn:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .technology-terminology {
+        order: 3;
+        margin-top: 1.95rem;
+    }
+    
+    .tech-title {
+        margin-bottom: 1rem;
+    }
+
+    .tech-info {
+        margin-top: 1.5rem;
+        width: 24.5rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+/* LAPTOPS AND BIG SCREENS */
+@media screen and (min-width: 63em) {
+    .technology-img {
+        background-image: url(./images/technology/image-launch-vehicle-portrait.jpg);
+    }
+}

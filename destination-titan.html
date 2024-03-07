@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./destination.css">
+    <title>Space-Tourism</title>
+</head>
+<body class="container">
+    <nav class="nav">
+        <a href="./index.html" class="nav-logo"><img src="./images/shared/logo.svg" alt="space logo"></a>
+        <div class="nav-line"></div>
+        <div class="mobile-buttons">
+            <a href="#" class="open"><img src="./images/shared/icon-hamburger.svg" alt=""></a>
+            <a href="" class="close"><img src="./images/shared/icon-close.svg" alt=""></a>
+        </div>
+        <div class="nav-bar">
+            <a href="./index.html" class="one nav-links"><span class="nav-order">00</span> HOME<a>
+            <a href="./destination.html" class="two nav-links"><span class="nav-order">01</span> DESTINATION</a>
+            <a href="./crew.html" class="three nav-links"><span class="nav-order">02</span> CREW</a>
+            <a href="./technology.html" class="four nav-links"><span class="nav-order">03</span> TECHNOLOGY</a>
+         </div>
+    </nav>
+
+    <section class="destination">
+        <div class="planet">
+            <h5><span>01</span> PICK YOUR DESTINATION</h5>
+            <div class="planet-img" style="background-image: url(./images/destination/image-titan.png);"></div>
+        </div>
+
+        <div class="planet-facts">
+            <div class="planet-locations">
+                <a href="./destination.html" class="location">MOON</a>
+                <a href="./destination-mars.html" class="location">MARS</a>
+                <a href="./destination-europa.html" class="location">EUROPA</a>
+                <a href="./destination-titan.html" class="location">TITAN</a>
+            </div>
+            <h2 class="planet-title">TITAN</h2>
+            <p class="planet-writeup">The only moon known to have a dense atmosphere other than Earth, Titan 
+                is a home away from home (just a few hundred degrees colder!). As a 
+                bonus, you get striking views of the Rings of Saturn.</p>
+            <div class="line"></div>
+            <div class="extra-facts">
+                <div class="avg-dist">
+                    <p class="facts-title">AVG. DISTANCE</p>
+
+                    <h5 class="facts-answer">1.6 BIL. KM</h5>
+                </div>
+                <div class="travel-time">
+                    <p class="facts-title">EST. TRAVEL TIME</p>
+
+                    <h5 class="facts-answer">7 YEARS</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+    <script src="./destination.js"></script>
+</body>
+</html>
